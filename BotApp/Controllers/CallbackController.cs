@@ -7,7 +7,9 @@ using VkNet.Utils;
 
 namespace BotApp.Controllers
 {
-    public class CallbackController : Controller
+    [ApiController]
+    [Route("[controller]")]
+    public class CallbackController : ControllerBase
     {
         /// <summary>
         /// Конфигурация приложения
